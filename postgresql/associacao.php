@@ -1,6 +1,6 @@
 <?php
 
-require_once './classes/Fabricante.php';
+//require_once './classes/Fabricante.php';
 require_once './classes/Produto.php';
 require_once './classes/Caracteristica.php';
 
@@ -18,8 +18,9 @@ $p1->addCaracteristica('Cor', 'Preto');
 $p1->addCaracteristica('Peso', '2.6 Kg');
 $p1->addCaracteristica('Potência', '20 Watts RMS');
 
-print 'Produto: '.$p1->getDescricao().'<br>';
+print 'Produto: '.$p1->getDescricao()."<br>\n";
+
 foreach ($p1->getCaracteristica() as $c){
-    print ' Característica: '.$c->getNome().' - '.$c->getValor().'<br>\n';
+    print " Característica: ".$c->getNome().' - '.$c->getValor()."<br>\n";
 }
-?>
+

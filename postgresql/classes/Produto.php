@@ -14,7 +14,7 @@ class Produto {
     }
     
     public function addCaracteristica($nome, $valor){
-        $this->caracteristicas = new Caracteristica($nome, $valor);
+        $this->caracteristicas[] = new Caracteristica($nome, $valor);
     }
     
     public function getCaracteristica() {
