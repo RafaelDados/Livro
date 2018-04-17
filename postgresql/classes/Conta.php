@@ -1,6 +1,6 @@
 <?php
 
-class Conta {
+abstract class Conta {
 
     protected $agencia;
     protected $conta;
@@ -11,6 +11,8 @@ class Conta {
         $this->conta = $conta;
         $this->saldo = $saldo;
     }
+    
+    abstract function retirar($quantia);
 
     public function getInfo() {
         return "Agência: {$this->agencia}, Conta:{$this->conta}";
