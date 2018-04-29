@@ -1,8 +1,7 @@
 <?php
-
-require_once './classes/Produto.php';
 require_once './classes/Orcamento.php';
 require_once './classes/OrcavelInterface.php';
+require_once './classes/Produto.php';
 require_once './classes/Servico.php';
 
 $o = new Orcamento();
