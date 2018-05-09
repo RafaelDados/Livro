@@ -8,7 +8,9 @@ class Titulo {
     }
     
     public function __get($propriedade) {
+        var_dump($this->data);
         return $this->data[$propriedade];
+        
     }
 }
 
